@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "195170938530",
+    "project_id": "messanger-live-64ab7",
+    "storage_bucket": "messanger-live-64ab7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:195170938530:android:1740df6197b9e542d3f1fb",
+        "android_client_info": {
+          "package_name": "com.example.message_live"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "195170938530-bj5nlmfl918r35o5b8glkq0kh99cvqem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAddKLLmUkC5SPjgMbqDQSeHDamfTyTF28"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "195170938530-bj5nlmfl918r35o5b8glkq0kh99cvqem.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "195170938530-k0qq04jo6kcqn62pccjosgpd32rk3m9j.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.messageLive.RunnerTests"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
