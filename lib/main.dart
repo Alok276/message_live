@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:message_live/screens/home_page.dart';
-import 'package:message_live/screens/my_profile.dart';
 import 'package:message_live/services/auth_service.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:message_live/services/gate_auth.dart';
@@ -26,9 +24,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-    //  home: GateAuth(),
-     // home: HomePage(),
-     home: MyProfile()
+      home: GateAuth(),
+     
     );
   }
 }

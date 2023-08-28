@@ -69,7 +69,7 @@ class _SignUpPageState extends State<SignUpPage> {
           //'email': emailController.text,
           // You can add more fields as needed
         });
-
+             
         if (_profileImage != null) {
           var profileImage = DateTime.now().millisecondsSinceEpoch.toString();
           var storageRef = FirebaseStorage.instance
@@ -88,7 +88,7 @@ class _SignUpPageState extends State<SignUpPage> {
             // You can add more fields as needed
           });
         }
-       }
+      }
     } catch (e) {
       SnackBar(content: Text(e.toString()));
     }
@@ -107,9 +107,9 @@ class _SignUpPageState extends State<SignUpPage> {
                   const SizedBox(
                     height: 45,
                   ),
-                 
+
                   //add an profile image
-                 GestureDetector(
+                  GestureDetector(
                     onTap: _pickImage,
                     child: Container(
                       decoration: BoxDecoration(
@@ -126,14 +126,16 @@ class _SignUpPageState extends State<SignUpPage> {
                                 fit: BoxFit.cover,
                               ),
                             )
-                          :const Center(
+                          : const Center(
                               child: Icon(Icons.add_a_photo),
                             ),
                     ),
                   ),
 
-                  const SizedBox(height: 15,),
-                  
+                  const SizedBox(
+                    height: 15,
+                  ),
+
                   //sign up text
                   const Text(
                     "Create Account",

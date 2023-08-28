@@ -13,6 +13,7 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +25,7 @@ class _HomePageState extends State<HomePage> {
           IconButton(
               onPressed: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) =>  MyProfile()));
+                    MaterialPageRoute(builder: (context) =>  const MyProfile()));
               },
               icon: const Icon(Icons.person)),
         ],
@@ -61,7 +62,7 @@ class _HomePageState extends State<HomePage> {
          backgroundImage: NetworkImage(url),
         ),
         
-        title:  Text(data['username']?? 'no username',
+        title:  Text(data['username'],
         style: const TextStyle(
           color: Colors.black,
           fontSize: 23
@@ -70,8 +71,9 @@ class _HomePageState extends State<HomePage> {
         onTap: () {
           Navigator.push(
               context, MaterialPageRoute(builder: (context) =>  ChatPage(
-                recieverUsername: data['username']??'no username',
+                recieverUsername: data['username'],
                 recieverUserId: data['uid'],
+                recieverProfileUrl: data['profileUrl'],
               )));
         },
       );

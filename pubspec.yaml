@@ -41,6 +41,7 @@ dependencies:
   cloud_firestore: ^4.8.4
   image_picker:
   firebase_storage: ^11.2.5
+  email_validator:
 
 dev_dependencies:
   flutter_test:

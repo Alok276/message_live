@@ -110,7 +110,21 @@ class _LoginPageState extends State<LoginPage> {
                                 style: TextStyle(fontWeight: FontWeight.bold),
                               ),
                             )
-                          ])
+                          ]),
+                            const SizedBox(height: 40,),
+                         Row(
+                          mainAxisAlignment: MainAxisAlignment.center,
+                          
+                           children: [
+                            const Text("Forgot Password?"),
+                             GestureDetector(
+                              onTap:(){
+
+                              } ,
+                              child: const Text(" Click here",
+                              style: TextStyle(fontWeight: FontWeight.bold),)),
+                           ],
+                         )
                     ],
                   ),
                 ),
