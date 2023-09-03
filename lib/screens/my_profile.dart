@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:message_live/components/edit_dialog.dart';
-import 'package:message_live/screens/login_page.dart';
 import 'package:message_live/services/auth_service.dart';
 import 'package:message_live/services/gate_auth.dart';
 import 'package:provider/provider.dart';
